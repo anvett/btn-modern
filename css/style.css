@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.btn-modern{
+    background-color: black;
+    color: red;
+    padding: 20px 25px;
+    border: none;
+    
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+    cursor: pointer;
+}
+
+.btn-modern:hover{
+    animation: traslacion 0.4s ease-out forwards;
+}
+
+@keyframes traslacion{
+    100%{
+        transform: (translateY(-5px));
+        border-bottom: solid 3px gray;
+        border-right: solid 3px gray;
+        background-color: red;
+        color: white;
+    }
+}
